@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Metric Handler</title>
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" -->
+    <!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body onload="processCSVData();"> -->
+
+<body>
+
+  <form class="form-horizontal well">
+    <legend>
+      <h3>
+        <div id="title">CSV Data Handler</div>
+      </h3>
+    </legend>
+    <fieldset>
+      <label for="csvFileInput"> <strong>CSV File:</strong>
+      </label>
+      <input type="file" id="csvFileInput" onchange="handleFiles(this.files)" accept=".csv">
+      </div>
+    </fieldset>
+  </form>
+
+  <hr />
+
+  <div class="container" id="result">
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/uploader.js" charset="utf-8"></script>
+  <script src="js/process.js" charset="utf-8"></script>
+
+</body>
+
+</html>
